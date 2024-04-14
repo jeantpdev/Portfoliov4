@@ -1,0 +1,10 @@
+---
+const { tecnologia } = Astro.props
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
+---
+
+<p class="inline-block text-xs px-3 py-1 font-semibold bg-zinc-200 rounded-md">{ capitalizeFirstLetter(tecnologia) }</p>

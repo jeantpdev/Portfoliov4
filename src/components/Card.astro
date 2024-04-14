@@ -1,0 +1,57 @@
+---
+
+const { titulo, tecnologias, descripcion, link_pagina, id } = Astro.props;
+
+const imagenes = {
+  axios: '/img/lenguajes/axios.png',
+  astro: '/img/lenguajes/astro.svg',
+  bootstrap: '/img/lenguajes/bootstrap.png',
+  css: '/img/lenguajes/css.png',
+  file: '/img/lenguajes/file.png',
+  flask: '/img/lenguajes/flask.png',
+  git: '/img/lenguajes/git.png',
+  html5: '/img/lenguajes/html5.png',
+  java: '/img/lenguajes/java.png',
+  javascript: '/img/lenguajes/javascript.png',
+  pandas: '/img/lenguajes/pandas.png',
+  python: '/img/lenguajes/python.png',
+  react: '/img/lenguajes/react.png',
+  supabase: '/img/lenguajes/supabase.png',
+  tailwind: '/img/lenguajes/tailwind.ico',
+  sql: '/img/lenguajes/sql.png',
+  ssh: '/img/lenguajes/ssh.png',
+  ssis: '/img/lenguajes/SSIS.png',
+  wordpress: '/img/lenguajes/wordpress.png',
+  sklearn: '/img/lenguajes/sklearn.svg',
+};
+
+
+---
+<div class="flex flex-col gap-y-10">
+    <div class="flex justify-between">
+        <div>
+            <i class="fa-regular fa-folder-open text-yellow-500 text-2xl sm:text-3xl" aria-hidden="true"></i>
+        </div>
+
+        <div class="flex">
+            {tecnologias.map((tecnologia) => ( <img src={imagenes[tecnologia]} class="h-7 md:h-9" alt=""/>))}
+        </div>
+
+    </div>
+
+    <div>
+        <h3 class="font-bold text-xl sm:text-2xl lg:text-3xl">{titulo}</h3>
+    </div>
+
+    <div>
+        <p class="text-gray-400 sm:text-xl">{descripcion}</p>
+    </div>
+    
+    <div>
+        <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 " href={`/infoProyecto/${id}`}>Ver proyecto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        {link_pagina && <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href= {link_pagina} >Pagina <i class="fa-solid fa-globe"></i></a>}
+    </div>
+
+
+    </div>
+</div>

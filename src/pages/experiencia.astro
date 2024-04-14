@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "Experiencia";
+---
+
+<Layout title = {pageTitle}> 
+    <div class="space-y-5">
+        <h1 class="text-5xl font-semibold">Experiencia</h1>
+        <p>
+            Fui practicante en TIGO Colombia como ingeniero de datos el cual me ha permitido aprender más sobre Python, SQL y herramientas como SSIS y Excel.
+
+            También he trabajado dando soporte en el área tecnológica en la compañia Equiti como desarrollador web
+        </p>
+        <!-- Item #1 -->
+        <div class="relative pl-8 sm:pl-32 py-6 group space-y-2">
+            <!-- Purple label -->
+            <div class="font-caveat font-semibold text-2xl text-emerald-500 mb-1 sm:mb-0">Tigo Colombia - Ingeniero de Datos</div>
+            <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Ago, 2023</time>
+        
+                <div>
+                    <p class="text-lg font-semibold text-slate-900">Scripts y automatizaciones</p>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="text-slate-500">
+            <p>Desarrollé scripts y automatizaciones en Python para optimizar procesos operativos:</p>
+            <li>
+                <span class="font-semibold text-zinc-900">Script clasificación de vendors:</span> Mediante la lectura de un excel (que podía contener hasta 200.000 registros) y un archivo que contenia los datos necesario, se hacia un cruce en el que se clasificaba cada registro del excel mediante una serie de condiciones y al terminar, se tenia un reporte con todos los registros clasificados.
+            </li>
+            <li>
+               <span class="font-semibold text-zinc-900">Script conteo de archivos:</span> Realizaba conteos de distintas carpetas mediante el uso de SSH de manera diaria y a su vez, alimentaba un excel clasificando la cantidad de archivos, archivo vacío o menor al tamaño promedio y finalmente, se enviaba un correo notificando si habían archivos vacíos o por debajo del promedio.
+            </li>
+            </div>
+        </div>
+        
+        <!-- Item #2 -->
+        <div class="relative pl-8 sm:pl-32 py-6 group space-y-2">
+            <!-- Purple label -->
+            <div class="font-caveat font-semibold text-2xl text-emerald-500 mb-1 sm:mb-0">Equiti - Desarrollador web</div>
+            <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">Nov, 2023</time>
+        
+                <div>
+                    <p class="text-lg font-semibold text-slate-900">Desarrollo web y soporte tecnico</p>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="text-slate-500">
+            <p>Limpieza de datos y creación de CRM:</p>
+            <li>
+                <span class="font-semibold text-zinc-900">Limpieza de datos:</span> Arreglé todos los registros que contenia el conjunto de datos incluyendo nombres de agentes, fechas, entre otros... Se hizo con Python y la libreria Pandas. Esta limpieza permitió subir los registros a una base de datos en la nube (supabase).
+            </li>
+            <li>
+               <span class="font-semibold text-zinc-900">CRM - Plataforma web:</span> La plataforma contiene distintas operaciones CRUD según el usuario, gráficas de estadísticas de las ventas realizadas, por realizar, promedios, entre otras. Se realizó usando HTML, CSS y JavaScript. Las consultas a la BD (supabase) se hacian mediante una API creada con Python usando Flask. Esto permitió llevar un mejor control de las ventas, se evitaba el ingreso erróneo de datos, el seguimiento en tiempo real de las ventas e incluir estadísticas relacionadas a ventas.
+            </li>
+            </div>
+    
+    </div>
+</Layout>
