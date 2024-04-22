@@ -16,7 +16,7 @@ export default function Navigation({ currentPage }) {
       {({ open }) => (
         <>
           <div className="mx-auto px-5 sm:py-2">
-            <div className="relative flex h-16 items-center justify-between lg:justify-around border-b-2">
+            <div className="relative flex h-16 items-center justify-between border-b-2">
               {/* Logo / Image */}
               <div className="flex items-center gap-x-5">
               <p className='font-semibold bg-zinc-900 text-zinc-500 py-1 px-6 rounded-md hover:text-emerald-600'>jeantp.dev</p>
@@ -44,7 +44,7 @@ export default function Navigation({ currentPage }) {
                     <a
                       key={item.name}
                       href={item.href}
-                      className={`rounded-md px-3 py-2 font-semibold ${currentPage === item.href ? 'text-zinc-300 bg-zinc-900' : 'text-zinc-500 hover:text-zinc-900'}`}
+                      className={`rounded-md px-2 py-1 font-semibold ${currentPage === item.href ? 'text-zinc-300 bg-zinc-900' : 'text-zinc-500 hover:text-zinc-900'}`}
                       aria-current={currentPage === item.href ? 'page' : undefined}
                     >
                       {item.name}
