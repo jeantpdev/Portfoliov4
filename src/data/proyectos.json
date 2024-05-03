@@ -1,31 +1,20 @@
 [
+
     {
       "id": "0",
-      "titulo": "WEB - CRM",
-      "tecnologias": ["html5", "css", "javascript", "axios"],
-      "descripcion": "Ventas de agentes de call center. Muestra estadísticas relacionadas a las ventas de los agentes. Usuario Admin, Calidad, Team Leader y Agente. Operaciones CRUD.",
-      "imagenes": ["/img/imagenes-proyectos/crm-inicio.png", "/img/imagenes-proyectos/crm-estadisticas.png"],
-      "funcionalidades": ["Almacen de datos", "Registro, Modificación y Eliminación de usuarios", "Registro, Modificación y Eliminación de ventas", "Visualización de gráficas", "Promedios", "Exportar ventas", "Filtrado de datos", "Gestión de roles", "Tablas", "Seguimiento de ventas en tiempo real"],
-      "link_github": "privado",
-      "link_backend": "privado",
-      "tipo": "web",
-      "relacion": "API - CRM"
+      "titulo": "WEB - TIENDA DE PRODUCTOS",
+      "tecnologias": ["astro", "react", "mongodb", "tailwind"],
+      "descripcion": "Tienda de productos que estan almacenados en mongoDB.",
+      "imagenes": ["/img/imagenes-proyectos/tienda-web.png", "/img/imagenes-proyectos/tienda-producto-web.png", "/img/imagenes-proyectos/tienda-checkout-web.png"],
+      "funcionalidades": ["Agregar productos al carrito", "Eliminar productos del carrito", "Formulario de datos", "Landing page"],
+      "link_github": "https://github.com/jeantpdev/tienda-landingPage",
+      "link_pagina": "https://astro-tienda-demo.netlify.app/",
+      "link_backend": "https://github.com/jeantpdev/mongodb-productos",
+      "tipo": "web"
     },
     {
       "id": "1",
-      "titulo": "API - CRM",
-      "tecnologias": ["python", "flask", "supabase", "pandas", "jwt"],
-      "descripcion": "Operaciones CRUD para usuarios. Analisis de estadisticas por dia, mes, año. Ventas en tiempo real.",
-      "imagenes": ["/img/imagenes-proyectos/api-crm-rutas.png"],
-      "funcionalidades": ["CRUD de Usuarios", "CRUD de Ventas", "Inicio de sesión", "Tokens JWT"," Filtrado de datos", "Usuarios por roles", "Exportar archivos"],
-      "link_github": "privado",
-      "link_frontend": "privado",
-      "tipo": "api",
-      "relacion": "WEB - CRM"
-    },
-    {
-      "id": "2",
-      "titulo": "breast-cancer-web",
+      "titulo": "WEB - BREAST CANCER",
       "tecnologias": ["react", "axios", "astro", "tailwind"],
       "descripcion": "Predicción de cancer de mama segun datos dados al sistema.",
       "imagenes": ["/img/imagenes-proyectos/cancer-mama-inicio.png", "/img/imagenes-proyectos/cancer-mama-prueba.png", "/img/imagenes-proyectos/cancer-mama-info.png"],
@@ -37,7 +26,7 @@
       "relacion": "breast-cancer-API"
     },
     {
-      "id": "3",
+      "id": "2",
       "titulo": "API - Prediccion de cancer de mama",
       "tecnologias": ["python", "flask", "sklearn", "jupyter notebook"],
       "descripcion": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
@@ -49,17 +38,28 @@
       "relacion": "breast-cancer-web"
     },
     {
-      "id": "4",
-      "titulo": "WEB - GESTION DE MEDICAMENTOS",
+      "id": "3",
+      "titulo": "WEB - CRM",
       "tecnologias": ["html5", "css", "javascript", "axios"],
-      "descripcion": "Inicio de sesion de usuario, medico y notificadores. Ve recordatorios de medicamentos, crea reportes de sintomas, entre otros.",
-      "imagenes": ["/img/imagenes-proyectos/gestion-medicamentos-inicio.png", "/img/imagenes-proyectos/gestion-medicamentos-perfil.png"],
-      "funcionalidades": ["Gestion de usuarios", "Notificaciones por email", "Notificaciones", "Reporte de sintomas", "Busqueda de usuarios", "Recordatorios"],
-      "link_github": "https://github.com/jeantpdev/gestion-medicamentos",
-      "link_pagina": "https://jeantpdev.github.io/gestion-medicamentos/",
-      "link_backend": "https://github.com/jeantpdev/api-gestion-medicamentos",
+      "descripcion": "Ventas de agentes de call center. Muestra estadísticas relacionadas a las ventas de los agentes. Usuario Admin, Calidad, Team Leader y Agente. Operaciones CRUD.",
+      "imagenes": ["/img/imagenes-proyectos/crm-inicio.png", "/img/imagenes-proyectos/crm-estadisticas.png"],
+      "funcionalidades": ["Almacen de datos", "Registro, Modificación y Eliminación de usuarios", "Registro, Modificación y Eliminación de ventas", "Visualización de gráficas", "Promedios", "Exportar ventas", "Filtrado de datos", "Gestión de roles", "Tablas", "Seguimiento de ventas en tiempo real"],
+      "link_github": "privado",
+      "link_backend": "privado",
       "tipo": "web",
-      "relacion": "API - GESTION DE MEDICAMENTOS" 
+      "relacion": "API - CRM"
+    },
+    {
+      "id": "4",
+      "titulo": "API - CRM",
+      "tecnologias": ["python", "flask", "supabase", "pandas", "jwt"],
+      "descripcion": "Operaciones CRUD para usuarios. Analisis de estadisticas por dia, mes, año. Ventas en tiempo real.",
+      "imagenes": ["/img/imagenes-proyectos/api-crm-rutas.png"],
+      "funcionalidades": ["CRUD de Usuarios", "CRUD de Ventas", "Inicio de sesión", "Tokens JWT"," Filtrado de datos", "Usuarios por roles", "Exportar archivos"],
+      "link_github": "privado",
+      "link_frontend": "privado",
+      "tipo": "api",
+      "relacion": "WEB - CRM"
     },
     {
       "id": "5",
@@ -88,7 +88,7 @@
     },
     { 
       "id": "7",
-      "titulo": "API - Sistemas basados en reglas",
+      "titulo": "API - SISTEMAS BASADOS EN REGLAS",
       "tecnologias": ["python", "experta", "sql"],
       "descripcion": "Sobre enfermedades gastrointestinales que arroja un diagnóstico despues de unas preguntas.",
       "funcionalidades":["Sistema de reglas", "Ingreso de datos"],
