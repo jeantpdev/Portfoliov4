@@ -1,5 +1,4 @@
 [
-
     {
       "id": "0",
       "titulo": "WEB - TIENDA DE PRODUCTOS",
@@ -14,7 +13,7 @@
     },
     {
       "id": "1",
-      "titulo": "WEB - BREAST CANCER",
+      "titulo": "WEB - PREDICCION CANCER DE MAMA",
       "tecnologias": ["react", "axios", "astro", "tailwind"],
       "descripcion": "Predicción de cancer de mama segun datos dados al sistema.",
       "imagenes": ["/img/imagenes-proyectos/cancer-mama-inicio.png", "/img/imagenes-proyectos/cancer-mama-prueba.png", "/img/imagenes-proyectos/cancer-mama-info.png"],
@@ -27,7 +26,7 @@
     },
     {
       "id": "2",
-      "titulo": "API - Prediccion de cancer de mama",
+      "titulo": "API - PREDICCION CANCER DE MAMA",
       "tecnologias": ["python", "flask", "sklearn", "jupyter notebook"],
       "descripcion": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
       "imagenes": ["/img/imagenes-proyectos/cancer-mama-api-rutas.png"],
@@ -39,6 +38,16 @@
     },
     {
       "id": "3",
+      "titulo": "LANDING PAGE - Lilacdreamers",
+      "tecnologias": ["astro", "tailwind", "react"],
+      "descripcion": "Sitio web para Lilacdreamers (kpop dance group). Muestra los miembros pertenecientes, galeria de imagenes, una página para ser parte de ellos y una página de contactos.",
+      "imagenes": ["/img/imagenes-proyectos/lilacdreamers-inicio.png", "/img/imagenes-proyectos/lilacdreamers-menu.png", "/img/imagenes-proyectos/lilacdreamers-miembros.png", "/img/imagenes-proyectos/lilacdreamers-unete.png", "/img/imagenes-proyectos/lilacdreamers-contacto.png"],
+      "link_github": "https://github.com/jeantpdev/lilacdreamers",
+      "link_pagina": "https://lilacdreamers.netlify.app/",
+      "tipo": "web"
+    },
+    {
+      "id": "4",
       "titulo": "WEB - CRM",
       "tecnologias": ["html5", "css", "javascript", "axios"],
       "descripcion": "Ventas de agentes de call center. Muestra estadísticas relacionadas a las ventas de los agentes. Usuario Admin, Calidad, Team Leader y Agente. Operaciones CRUD.",
@@ -50,7 +59,7 @@
       "relacion": "API - CRM"
     },
     {
-      "id": "4",
+      "id": "5",
       "titulo": "API - CRM",
       "tecnologias": ["python", "flask", "supabase", "pandas", "jwt"],
       "descripcion": "Operaciones CRUD para usuarios. Analisis de estadisticas por dia, mes, año. Ventas en tiempo real.",
@@ -62,7 +71,7 @@
       "relacion": "WEB - CRM"
     },
     {
-      "id": "5",
+      "id": "6",
       "titulo": "API - GESTION DE MEDICAMENTOS",
       "tecnologias": ["python", "flask", "supabase"],
       "descripcion": "crea reportes de sintomas y recordatorios, envia notificaciones a usuarios y operaciones CRUD.",
@@ -74,7 +83,7 @@
       "relacion": "WEB - GESTION DE MEDICAMENTOS"
     },
     {
-      "id": "6",
+      "id": "7",
       "titulo": "WEB - SISTEMAS BASADOS EN REGLAS",
       "tecnologias": ["html5", "bootstrap", "javascript"],
       "descripcion": "Página para realizar el test del sistema basados en reglas (sobre las enfermedades gastrointestinales) y ver los resultados.",
@@ -87,7 +96,7 @@
       "relacion": "API - Sistemas basados en reglas"
     },
     { 
-      "id": "7",
+      "id": "8",
       "titulo": "API - SISTEMAS BASADOS EN REGLAS",
       "tecnologias": ["python", "experta", "sql"],
       "descripcion": "Sobre enfermedades gastrointestinales que arroja un diagnóstico despues de unas preguntas.",

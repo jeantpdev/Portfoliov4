@@ -43,7 +43,7 @@ const pageTitle = "Proyectos";
         <div class="grid gap-1">
             <h3 class="text-xl font-semibold" >Repositorios:</h3>
             <div class="flex gap-2">
-                    <div class="" >
+                    <div class="space-y-2" >
                         <div>
                             <p>Repositorio:</p>
                         </div>
@@ -55,58 +55,53 @@ const pageTitle = "Proyectos";
                         </div>
                     </div>
             
-                    <div class="">
-                        {tipo == 'web'?
-                            link_backend == 'privado' ? 
-                            <div>
-                                <div><p>Backend:</p></div>
-                                <div><a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a></div>
-                            </div>
-                            
-                            : 
-                            <div>
-                                <div><p>Backend:</p></div>
-                                <div><a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_backend}>click aca <i class={iconoGithub}></i></a></div>
-                            </div>
-                            :
-                            link_frontend == 'privado' ? 
-                            <div>
-                                <div><p>Frontend:</p></div>
-                                <div><a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a></div>
-                            </div>
-                            :
-                            <div>
-                                <div><p>Frontend:</p></div>
-                                <div><a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_frontend}>click aca <i class={iconoGithub}></i></i></a></div>
-                            </div>
-                        }
+                    <div class="space-y-2">
+                        <div><p>{tipo === 'web' ? 'Backend:' : 'Frontend:'}</p></div>
+                        <div>
+                            {tipo === 'web' ?
+                                link_backend === 'privado' ? 
+                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a>
+                                    :
+                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_backend}>click aquí <i class={iconoGithub}></i></a>
+                                :
+                                link_frontend === 'privado' ? 
+                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a>
+                                    :
+                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_frontend}>click aquí <i class={iconoGithub}></i></a>
+                            }
+                        </div>
                     </div>
+                    
             </div>
 
         </div>
 
-        <div class="grid gap-5">
-            {link_pagina && 
+        {link_pagina && 
+            <div class="space-y-2">
                 <div>
-                    <h3>web:</h3> <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" href={link_pagina} target="_blank">click aca <i class="fa-solid fa-globe"></i></a>
-                </div> }
-        </div>
-
-        <div>
-            <p><i class="fa-regular fa-file-lines"></i> Funcionalidades:</p>
-            {funcionalidades && funcionalidades.map((funcionalidad) =>(
-                <li>{funcionalidad}.</li>
-            )) }   
-        </div>
-        
-        <div>
-            {relacion &&
-                <div>
-                    <h3 class="font-semibold text-xl">Tener en cuenta:</h3>
-                    <p>Se usa en conjunto con el proyecto <b>{relacion}</b></p>
+                    <h3>web:</h3> 
                 </div>
-            }
-        </div>
+                <div>
+                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" href={link_pagina} target="_blank">click aca <i class="fa-solid fa-globe"></i></a>
+                </div>
+        </div> }
+
+        {
+            funcionalidades &&
+            <div>
+                <p><i class="fa-regular fa-file-lines"></i> Funcionalidades:</p>
+                {funcionalidades && funcionalidades.map((funcionalidad) =>(
+                    <li>{funcionalidad}.</li>
+                )) }   
+            </div>
+        }
+        
+        {relacion &&
+            <div>
+                <h3 class="font-semibold text-xl">Tener en cuenta:</h3>
+                <p>Se usa en conjunto con el proyecto <b>{relacion}</b></p>
+            </div>
+        }
 
         <div class="imagenes-proyecto">
             {imagenes && imagenes.map((imagen) =>(
