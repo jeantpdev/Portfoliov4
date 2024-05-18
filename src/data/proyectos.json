@@ -1,111 +1,219 @@
 [
-    {
-      "id": "0",
-      "titulo": "WEB - TIENDA DE PRODUCTOS",
-      "tecnologias": ["astro", "react", "mongodb", "tailwind"],
-      "descripcion": "Tienda de productos que estan almacenados en mongoDB.",
-      "imagenes": ["/img/imagenes-proyectos/tienda-web.png", "/img/imagenes-proyectos/tienda-producto-web.png", "/img/imagenes-proyectos/tienda-checkout-web.png"],
-      "funcionalidades": ["Agregar productos al carrito", "Eliminar productos del carrito", "Formulario de datos", "Landing page"],
-      "link_github": "https://github.com/jeantpdev/tienda-landingPage",
-      "link_pagina": "https://astro-tienda-demo.netlify.app/",
-      "link_backend": "https://github.com/jeantpdev/mongodb-productos",
-      "tipo": "web"
-    },
-    {
-      "id": "1",
-      "titulo": "WEB - PREDICCION CANCER DE MAMA",
-      "tecnologias": ["react", "axios", "astro", "tailwind"],
-      "descripcion": "Predicción de cancer de mama segun datos dados al sistema.",
-      "imagenes": ["/img/imagenes-proyectos/cancer-mama-inicio.png", "/img/imagenes-proyectos/cancer-mama-prueba.png", "/img/imagenes-proyectos/cancer-mama-info.png"],
-      "funcionalidades":["Prueba de cancer de mama", "Informacion general"],
-      "link_github": "https://github.com/jeantpdev/breast-cancer-web",
-      "link_pagina": "https://breast-cancer-test.netlify.app/",
-      "link_backend": "https://github.com/jeantpdev/breast-cancer-API",
-      "tipo": "web",
-      "relacion": "breast-cancer-API"
-    },
-    {
-      "id": "2",
-      "titulo": "API - PREDICCION CANCER DE MAMA",
-      "tecnologias": ["python", "flask", "sklearn", "jupyter notebook"],
-      "descripcion": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
-      "imagenes": ["/img/imagenes-proyectos/cancer-mama-api-rutas.png"],
-      "funcionalidades":["Prediccion", "Entrada de datos", "Entrenamiento de datos", "IA", "K-vecinos"],
-      "link_github": "https://github.com/jeantpdev/breast-cancer-API",
-      "link_frontend":"https://github.com/jeantpdev/breast-cancer-web",
-      "tipo": "api",
-      "relacion": "breast-cancer-web"
-    },
-    {
-      "id": "3",
-      "titulo": "LANDING PAGE - Lilacdreamers",
-      "tecnologias": ["astro", "tailwind", "react"],
-      "descripcion": "Sitio web para Lilacdreamers (kpop dance group). Muestra los miembros pertenecientes, galeria de imagenes, una página para ser parte de ellos y una página de contactos.",
-      "imagenes": ["/img/imagenes-proyectos/lilacdreamers-inicio.png", "/img/imagenes-proyectos/lilacdreamers-menu.png", "/img/imagenes-proyectos/lilacdreamers-miembros.png", "/img/imagenes-proyectos/lilacdreamers-unete.png", "/img/imagenes-proyectos/lilacdreamers-contacto.png"],
-      "link_github": "https://github.com/jeantpdev/lilacdreamers",
-      "link_pagina": "https://lilacdreamers.netlify.app/",
-      "tipo": "web"
-    },
-    {
-      "id": "4",
-      "titulo": "WEB - CRM",
-      "tecnologias": ["html5", "css", "javascript", "axios"],
-      "descripcion": "Ventas de agentes de call center. Muestra estadísticas relacionadas a las ventas de los agentes. Usuario Admin, Calidad, Team Leader y Agente. Operaciones CRUD.",
-      "imagenes": ["/img/imagenes-proyectos/crm-inicio.png", "/img/imagenes-proyectos/crm-estadisticas.png"],
-      "funcionalidades": ["Almacen de datos", "Registro, Modificación y Eliminación de usuarios", "Registro, Modificación y Eliminación de ventas", "Visualización de gráficas", "Promedios", "Exportar ventas", "Filtrado de datos", "Gestión de roles", "Tablas", "Seguimiento de ventas en tiempo real"],
-      "link_github": "privado",
-      "link_backend": "privado",
-      "tipo": "web",
-      "relacion": "API - CRM"
-    },
-    {
-      "id": "5",
-      "titulo": "API - CRM",
-      "tecnologias": ["python", "flask", "supabase", "pandas", "jwt"],
-      "descripcion": "Operaciones CRUD para usuarios. Analisis de estadisticas por dia, mes, año. Ventas en tiempo real.",
-      "imagenes": ["/img/imagenes-proyectos/api-crm-rutas.png"],
-      "funcionalidades": ["CRUD de Usuarios", "CRUD de Ventas", "Inicio de sesión", "Tokens JWT"," Filtrado de datos", "Usuarios por roles", "Exportar archivos"],
-      "link_github": "privado",
-      "link_frontend": "privado",
-      "tipo": "api",
-      "relacion": "WEB - CRM"
-    },
-    {
-      "id": "6",
-      "titulo": "API - GESTION DE MEDICAMENTOS",
-      "tecnologias": ["python", "flask", "supabase"],
-      "descripcion": "crea reportes de sintomas y recordatorios, envia notificaciones a usuarios y operaciones CRUD.",
-      "imagenes": ["/img/imagenes-proyectos/api-gestion-medicamentos.png"],
-      "funcionalidades":["CRUD de Usuarios", "CRUD de Medicos" ,"Inicio de sesion", "Tokens JWT", "Mensajes por email", "Gestion de roles", "Almacen de reportes"],
-      "link_github": "https://github.com/jeantpdev/api-gestion-medicamentos",
-      "link_frontend": "https://github.com/jeantpdev/gestion-medicamentos",
-      "tipo": "api",
-      "relacion": "WEB - GESTION DE MEDICAMENTOS"
-    },
-    {
-      "id": "7",
-      "titulo": "WEB - SISTEMAS BASADOS EN REGLAS",
-      "tecnologias": ["html5", "bootstrap", "javascript"],
-      "descripcion": "Página para realizar el test del sistema basados en reglas (sobre las enfermedades gastrointestinales) y ver los resultados.",
-      "funcionalidades": ["Ingreso de datos", "Respuesta de la prueba", "Prueba"],
-      "imagenes": ["/img/imagenes-proyectos/sbr-prueba-inicio.png", "/img/imagenes-proyectos/sbr-prueba-test.png"],
-      "link_github": "https://github.com/jeantpdev/sbr-sistema-digestivo",
-      "link_pagina": "https://jeantpdev.github.io/sbr-sistema-digestivo/",
-      "link_backend": "https://github.com/jeantpdev/api-sbr-sistema-digestivo",
-      "tipo": "web",
-      "relacion": "API - Sistemas basados en reglas"
-    },
-    { 
-      "id": "8",
-      "titulo": "API - SISTEMAS BASADOS EN REGLAS",
-      "tecnologias": ["python", "experta", "sql"],
-      "descripcion": "Sobre enfermedades gastrointestinales que arroja un diagnóstico despues de unas preguntas.",
-      "funcionalidades":["Sistema de reglas", "Ingreso de datos"],
-      "imagenes": ["/img/imagenes-proyectos/api-sbr-sistema-digestivo.png"],
-      "link_github": "https://github.com/jeantpdev/api-sbr-sistema-digestivo",
-      "link_frontend": "https://github.com/jeantpdev/sbr-sistema-digestivo",
-      "tipo": "web",
-      "relacion": "WEB - SISTEMAS BASADOS EN REGLAS"
-    }
-  ]
-  
+  {
+    "id": "0",
+    "titulo": "WEB - TIENDA DE PRODUCTOS",
+    "tecnologias": [
+      "astro",
+      "react",
+      "mongodb",
+      "tailwind",
+      "axios"
+    ],
+    "descripcion": "Tienda de productos que estan almacenados en mongoDB.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-web",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-producto-web",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-checkout-web"
+    ],
+    "funcionalidades": [
+      "Agregar productos al carrito",
+      "Eliminar productos del carrito",
+      "Formulario de datos",
+      "Landing page"
+    ],
+    "link_github": "https://github.com/jeantpdev/tienda-landingPage",
+    "link_pagina": "https://astro-tienda-demo.netlify.app/",
+    "link_backend": "https://github.com/jeantpdev/mongodb-productos",
+    "tipo": "web",
+    "relacion": "API - PRODUCTOS TIENDA"
+  },
+  {
+    "id": "1",
+    "titulo": "WEB - ADMIN DASHBOARD",
+    "tecnologias": [
+      "astro",
+      "react",
+      "mongodb",
+      "tailwind",
+      "axios"
+    ],
+    "descripcion": "Dashboard destinado para el control de inventario de productos.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-productos",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-agregar-producto",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-editar-producto",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-pedidos",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-ver-pedido"
+    ],
+    "funcionalidades": [
+      "Agregar productos nuevos",
+      "Eliminar productos",
+      "Editar productos",
+      "Ver pedidos",
+      "Envio automatico de correo al llegar pedido nuevo",
+      "Subir imagenes del producto"
+    ],
+    "link_github": "https://github.com/jeantpdev/admin-dashboard",
+    "link_backend": "https://github.com/jeantpdev/mongodb-productos",
+    "tipo": "web",
+    "relacion": "API - PRODUCTOS TIENDA"
+  },
+  {
+    "id": "2",
+    "titulo": "API - PRODUCTOS TIENDA",
+    "tecnologias": [
+      "python",
+      "flask",
+      "mongodb",
+      "jwt",
+      "cloudinary"
+    ],
+    "descripcion": "Dashboard destinado para el control de inventario de productos.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-productos",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-agregar-producto",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-editar-producto",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-pedidos",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-ver-pedido"
+    ],
+    "funcionalidades": [
+      "Agregar productos nuevos",
+      "Eliminar productos",
+      "Editar productos",
+      "Ver pedidos",
+      "Envio de correo al llegar pedido nuevo",
+      "Subir imagenes del producto"
+    ],
+    "link_github": "https://github.com/jeantpdev/admin-dashboard",
+    "link_backend": "https://github.com/jeantpdev/mongodb-productos",
+    "tipo": "web"
+  },
+  {
+    "id": "3",
+    "titulo": "WEB - PREDICCION CANCER DE MAMA",
+    "tecnologias": [
+      "react",
+      "axios",
+      "astro",
+      "tailwind"
+    ],
+    "descripcion": "Predicción de cancer de mama segun datos dados al sistema.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-inicio",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-prueba",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-info"
+    ],
+    "funcionalidades": [
+      "Prueba de cancer de mama",
+      "Informacion general"
+    ],
+    "link_github": "https://github.com/jeantpdev/breast-cancer-web",
+    "link_pagina": "https://breast-cancer-test.netlify.app/",
+    "link_backend": "https://github.com/jeantpdev/breast-cancer-API",
+    "tipo": "web",
+    "relacion": "breast-cancer-API"
+  },
+  {
+    "id": "4",
+    "titulo": "API - PREDICCION CANCER DE MAMA",
+    "tecnologias": [
+      "python",
+      "flask",
+      "sklearn"
+    ],
+    "descripcion": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-api-rutas"
+    ],
+    "funcionalidades": [
+      "Prediccion",
+      "Entrada de datos",
+      "Entrenamiento de datos",
+      "IA",
+      "K-vecinos"
+    ],
+    "link_github": "https://github.com/jeantpdev/breast-cancer-API",
+    "link_frontend": "https://github.com/jeantpdev/breast-cancer-web",
+    "tipo": "api",
+    "relacion": "breast-cancer-web"
+  },
+  {
+    "id": "5",
+    "titulo": "LANDING PAGE - Lilacdreamers",
+    "tecnologias": [
+      "astro",
+      "tailwind",
+      "react"
+    ],
+    "descripcion": "Sitio web para Lilacdreamers (kpop dance group). Muestra los miembros pertenecientes, galeria de imagenes, una página para ser parte de ellos y una página de contactos.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-inicio",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-menu",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-miembros",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-unete",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-contacto"
+    ],
+    "link_github": "https://github.com/jeantpdev/lilacdreamers",
+    "link_pagina": "https://lilacdreamers.netlify.app/",
+    "tipo": "web"
+  },
+  {
+    "id": "6",
+    "titulo": "WEB - CRM",
+    "tecnologias": [
+      "html5",
+      "css",
+      "javascript",
+      "axios"
+    ],
+    "descripcion": "Ventas de agentes de call center. Muestra estadísticas relacionadas a las ventas de los agentes. Usuario Admin, Calidad, Team Leader y Agente. Operaciones CRUD.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/crm-inicio",
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/crm-estadisticas"
+    ],
+    "funcionalidades": [
+      "Almacen de datos",
+      "Registro, Modificación y Eliminación de usuarios",
+      "Registro, Modificación y Eliminación de ventas",
+      "Visualización de gráficas",
+      "Promedios",
+      "Exportar ventas",
+      "Filtrado de datos",
+      "Gestión de roles",
+      "Tablas",
+      "Seguimiento de ventas en tiempo real"
+    ],
+    "link_github": "privado",
+    "link_backend": "privado",
+    "tipo": "web",
+    "relacion": "API - CRM"
+  },
+  {
+    "id": "7",
+    "titulo": "API - CRM",
+    "tecnologias": [
+      "python",
+      "flask",
+      "supabase",
+      "pandas",
+      "jwt"
+    ],
+    "descripcion": "Operaciones CRUD para usuarios. Analisis de estadisticas por dia, mes, año. Ventas en tiempo real.",
+    "imagenes": [
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/api-crm-rutas"
+    ],
+    "funcionalidades": [
+      "CRUD de Usuarios",
+      "CRUD de Ventas",
+      "Inicio de sesión",
+      "Tokens JWT",
+      " Filtrado de datos",
+      "Usuarios por roles",
+      "Exportar archivos"
+    ],
+    "link_github": "privado",
+    "link_frontend": "privado",
+    "tipo": "api",
+    "relacion": "WEB - CRM"
+  }
+]

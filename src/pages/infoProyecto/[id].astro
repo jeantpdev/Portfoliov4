@@ -1,114 +1,176 @@
 ---
-import type { GetStaticPaths } from "astro";
-import proyectosRealizados from "../../data/proyectos.json"
-import Layout from "../../layouts/Layout.astro"
-import Technologys from "../../components/Technologys.astro";
+import type { GetStaticPaths } from 'astro';
+import proyectosRealizados from '../../data/proyectos.json';
+import Layout from '../../layouts/Layout.astro';
+import Technologys from '../../components/Technologys.astro';
 
-export async function getStaticPaths(){
+export async function getStaticPaths() {
     return proyectosRealizados.map((proyectos) => ({
         params: {
-            id: proyectos.id
+            id: proyectos.id,
         },
         props: {
-            proyectos: proyectos
+            proyectos: proyectos,
         },
-    }))
+    }));
 }
 
-const {titulo, imagenes, funcionalidades, tecnologias, link_pagina, link_github, link_backend, link_frontend, tipo, relacion } = Astro.props.proyectos
+const {
+    titulo,
+    imagenes,
+    funcionalidades,
+    tecnologias,
+    link_pagina,
+    link_github,
+    link_backend,
+    link_frontend,
+    tipo,
+    relacion,
+} = Astro.props.proyectos;
 
-const iconoGithub = 'fa-brands fa-github'
-const iconoCandado = 'fa-solid fa-shield'
-const pageTitle = "Proyectos";
-
+const iconoGithub = 'fa-brands fa-github';
+const iconoCandado = 'fa-solid fa-shield';
+const pageTitle = 'Proyectos';
 ---
 
-<Layout title = {pageTitle}>
+<Layout title={pageTitle}>
     <div class="flex flex-col gap-y-5 mb-10">
         <div class="flex flex-col space-y-5 mt-5">
-            <a href="/proyectos/" ><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="/proyectos/"><i class="fa-solid fa-arrow-left"></i></a>
             <h1 class="text-3xl font-bold">{titulo}</h1>
         </div>
 
         <div class="grid gap-5">
-            <h3 class="font-semibold text-xl"><i class="fa-solid fa-code"></i> Tecnologías:</h3>
+            <h3 class="font-semibold text-xl">
+                <i class="fa-solid fa-code"></i> Tecnologías usadas:
+            </h3>
             <div class="flex flex-wrap gap-2">
-                {tecnologias && tecnologias.map((tecnologia) =>(
-                    <Technologys tecnologia = {tecnologia}/>
-                )) }
+                {
+                    tecnologias &&
+                        tecnologias.map((tecnologia) => (
+                            <Technologys tecnologia={tecnologia} />
+                        ))
+                }
             </div>
-
         </div>
 
         <div class="grid gap-1">
-            <h3 class="text-xl font-semibold" >Repositorios:</h3>
             <div class="flex gap-2">
-                    <div class="space-y-2" >
-                        <div>
-                            <p>Repositorio:</p>
-                        </div>
-                        <div>
-                            {link_github == 'privado' ?
-                            <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_github}>Privado <i class={iconoGithub}></i></a>:
-                            <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_github}>click aca <i class={iconoGithub}></i></a>
-                            }
-                        </div>
+                <div class="space-y-3">
+                    <div>
+                        <p>Repositorio:</p>
                     </div>
-            
-                    <div class="space-y-2">
-                        <div><p>{tipo === 'web' ? 'Backend:' : 'Frontend:'}</p></div>
-                        <div>
-                            {tipo === 'web' ?
-                                link_backend === 'privado' ? 
-                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a>
-                                    :
-                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_backend}>click aquí <i class={iconoGithub}></i></a>
-                                :
-                                link_frontend === 'privado' ? 
-                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">Privado <i class={iconoCandado}></i></a>
-                                    :
-                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" target="_blank" href={link_frontend}>click aquí <i class={iconoGithub}></i></a>
-                            }
-                        </div>
+                    <div>
+                        {
+                            link_github == 'privado' ? (
+                                <a
+                                    class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2"
+                                    target="_blank"
+                                    href={link_github}>
+                                    Privado <i class={iconoGithub} />
+                                </a>
+                            ) : (
+                                <a
+                                    class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2"
+                                    target="_blank"
+                                    href={link_github}>
+                                    click aca <i class={iconoGithub} />
+                                </a>
+                            )
+                        }
                     </div>
-                    
+                </div>
+
+                <div class="space-y-3">
+                    <div>
+                        <p>{tipo === 'web' ? 'Backend:' : 'Frontend:'}</p>
+                    </div>
+                    <div>
+                        {
+                            tipo === 'web' ? (
+                                link_backend === 'privado' ? (
+                                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">
+                                        Privado <i class={iconoCandado} />
+                                    </a>
+                                ) : (
+                                    <a
+                                        class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2"
+                                        target="_blank"
+                                        href={link_backend}>
+                                        click aquí <i class={iconoGithub} />
+                                    </a>
+                                )
+                            ) : link_frontend === 'privado' ? (
+                                <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2 boton-bloqueado">
+                                    Privado <i class={iconoCandado} />
+                                </a>
+                            ) : (
+                                <a
+                                    class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2"
+                                    target="_blank"
+                                    href={link_frontend}>
+                                    click aquí <i class={iconoGithub} />
+                                </a>
+                            )
+                        }
+                    </div>
+                </div>
             </div>
-
         </div>
-
-        {link_pagina && 
-            <div class="space-y-2">
-                <div>
-                    <h3>web:</h3> 
-                </div>
-                <div>
-                    <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" href={link_pagina} target="_blank">click aca <i class="fa-solid fa-globe"></i></a>
-                </div>
-        </div> }
 
         {
-            funcionalidades &&
-            <div>
-                <p><i class="fa-regular fa-file-lines"></i> Funcionalidades:</p>
-                {funcionalidades && funcionalidades.map((funcionalidad) =>(
-                    <li>{funcionalidad}.</li>
-                )) }   
-            </div>
-        }
-        
-        {relacion &&
-            <div>
-                <h3 class="font-semibold text-xl">Tener en cuenta:</h3>
-                <p>Se usa en conjunto con el proyecto <b>{relacion}</b></p>
-            </div>
+            link_pagina && (
+                <div class="space-y-2">
+                    <div>
+                        <h3>web:</h3>
+                    </div>
+                    <div>
+                        <a
+                            class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2"
+                            href={link_pagina}
+                            target="_blank">
+                            click aca <i class="fa-solid fa-globe" />
+                        </a>
+                    </div>
+                </div>
+            )
         }
 
-        <div class="imagenes-proyecto">
-            {imagenes && imagenes.map((imagen) =>(
-                <img src={imagen} alt={`Imagen`} />
-            )) }
+        {
+            funcionalidades && (
+                <div class="space-y-1">
+                    <p class="text-md font-semibold">
+                        <i class="fa-regular fa-file-lines" /> Funcionalidades:
+                    </p>
+                    {funcionalidades &&
+                        funcionalidades.map((funcionalidad) => (
+                            <li>{funcionalidad}.</li>
+                        ))}
+                </div>
+            )
+        }
+
+        {
+            relacion && (
+                <div>
+                    <h3 class="font-semibold text-md">Tener en cuenta:</h3>
+                    <p>
+                        Se usa en conjunto con el proyecto <b>{relacion}</b>
+                    </p>
+                </div>
+            )
+        }
+
+        <div class="space-y-2">
+            {
+                imagenes &&
+                    imagenes.map((imagen) => (
+                        <img
+                            src={imagen}
+                            alt={`Imagen`}
+                        />
+                    ))
+            }
         </div>
     </div>
-
-
 </Layout>

@@ -8,7 +8,7 @@ const imagenes = {
   bootstrap: '/img/lenguajes/bootstrap.png',
   css: '/img/lenguajes/css.png',
   file: '/img/lenguajes/file.png',
-  flask: '/img/lenguajes/flask.png',
+  flask: '/img/lenguajes/flask.svg',
   git: '/img/lenguajes/git.png',
   html5: '/img/lenguajes/html5.png',
   java: '/img/lenguajes/java.png',
@@ -23,7 +23,9 @@ const imagenes = {
   ssis: '/img/lenguajes/SSIS.png',
   wordpress: '/img/lenguajes/wordpress.png',
   sklearn: '/img/lenguajes/sklearn.svg',
-  mongodb: '/img/lenguajes/mongodb.svg'
+  mongodb: '/img/lenguajes/mongodb.svg',
+  cloudinary: '/img/lenguajes/cloudinary.svg',
+  jwt: '/img/lenguajes/jwt.svg'
 };
 
 
@@ -34,8 +36,8 @@ const imagenes = {
             <i class="fa-regular fa-folder-open text-yellow-500 text-2xl sm:text-3xl" aria-hidden="true"></i>
         </div>
 
-        <div class="flex">
-            {tecnologias.map((tecnologia) => ( <img src={imagenes[tecnologia]} class="h-7 md:h-9" alt=""/>))}
+        <div class="flex gap-x-1">
+            {tecnologias.map((tecnologia) => ( <img src={imagenes[tecnologia]} class="h-7 md:h-9 md:w-7 object-contain" alt=""/>))}
         </div>
 
     </div>
