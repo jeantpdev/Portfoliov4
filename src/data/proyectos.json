@@ -5,7 +5,6 @@
     "tecnologias": [
       "astro",
       "react",
-      "mongodb",
       "tailwind",
       "axios"
     ],
@@ -33,7 +32,6 @@
     "tecnologias": [
       "astro",
       "react",
-      "mongodb",
       "tailwind",
       "axios"
     ],
@@ -51,7 +49,8 @@
       "Editar productos",
       "Ver pedidos",
       "Envio automatico de correo al llegar pedido nuevo",
-      "Subir imagenes del producto"
+      "Subir imagenes del producto",
+      "Contiene un inicio de sesion"
     ],
     "link_github": "https://github.com/jeantpdev/admin-dashboard",
     "link_backend": "https://github.com/jeantpdev/mongodb-productos",
@@ -70,11 +69,7 @@
     ],
     "descripcion": "Dashboard destinado para el control de inventario de productos.",
     "imagenes": [
-      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-productos",
-      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-agregar-producto",
-      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-editar-producto",
-      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-pedidos",
-      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-ver-pedido"
+      "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/api-dashboard-swagger"
     ],
     "funcionalidades": [
       "Agregar productos nuevos",
@@ -82,11 +77,14 @@
       "Editar productos",
       "Ver pedidos",
       "Envio de correo al llegar pedido nuevo",
-      "Subir imagenes del producto"
+      "Subir imagenes del producto",
+      "Inicio de sesion",
+      "Proteccion de rutas mediante JWT"
     ],
-    "link_github": "https://github.com/jeantpdev/admin-dashboard",
-    "link_backend": "https://github.com/jeantpdev/mongodb-productos",
-    "tipo": "web"
+    "link_github": "https://github.com/jeantpdev/mongodb-productos",
+    "link_frontend": "https://github.com/jeantpdev/admin-dashboard",
+    "tipo": "api",
+    "relacion": "WEB - ADMIN DASHBOARD y WEB - TIENDA DE PRODUCTOS"
   },
   {
     "id": "3",
@@ -143,7 +141,8 @@
     "tecnologias": [
       "astro",
       "tailwind",
-      "react"
+      "react",
+      "cloudinary"
     ],
     "descripcion": "Sitio web para Lilacdreamers (kpop dance group). Muestra los miembros pertenecientes, galeria de imagenes, una página para ser parte de ellos y una página de contactos.",
     "imagenes": [
