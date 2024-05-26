@@ -9,7 +9,8 @@
       "powerbi"
     ],
     "descripcion": "API creada para la practica de consultas PostgreSQL",
-    "imagenes": ["https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQL"],
+    "imagenes": [ "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/Tablas-PracticaSQL",
+                  "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQL"],
     "funcionalidades": [
       "Agregar ventas",
       "Agregar usuarios",
