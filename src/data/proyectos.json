@@ -1,6 +1,26 @@
 [
   {
     "id": "0",
+    "titulo": "Práctica PostgresSQL - API y Power BI",
+    "tecnologias": [
+      "python",
+      "flask",
+      "postgresql",
+      "powerbi"
+    ],
+    "descripcion": "API creada para la practica de consultas PostgreSQL",
+    "imagenes": ["https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQL"],
+    "funcionalidades": [
+      "Agregar ventas",
+      "Agregar usuarios",
+      "Visualizar todas las ventas registradas",
+      "Visualizar todos los usuarios registrados"
+    ],
+    "link_github": "https://github.com/jeantpdev/api-ventas-sql",
+    "tipo": "api"
+  },
+  {
+    "id": "1",
     "titulo": "WEB - TIENDA DE PRODUCTOS",
     "tecnologias": [
       "astro",
@@ -27,7 +47,7 @@
     "relacion": "API - PRODUCTOS TIENDA"
   },
   {
-    "id": "1",
+    "id": "2",
     "titulo": "WEB - ADMIN DASHBOARD",
     "tecnologias": [
       "astro",
@@ -58,7 +78,7 @@
     "relacion": "API - PRODUCTOS TIENDA"
   },
   {
-    "id": "2",
+    "id": "3",
     "titulo": "API - PRODUCTOS TIENDA",
     "tecnologias": [
       "python",
@@ -87,7 +107,7 @@
     "relacion": "WEB - ADMIN DASHBOARD y WEB - TIENDA DE PRODUCTOS"
   },
   {
-    "id": "3",
+    "id": "4",
     "titulo": "WEB - PREDICCION CANCER DE MAMA",
     "tecnologias": [
       "react",
@@ -112,7 +132,7 @@
     "relacion": "breast-cancer-API"
   },
   {
-    "id": "4",
+    "id": "5",
     "titulo": "API - PREDICCION CANCER DE MAMA",
     "tecnologias": [
       "python",
@@ -136,7 +156,7 @@
     "relacion": "breast-cancer-web"
   },
   {
-    "id": "5",
+    "id": "6",
     "titulo": "LANDING PAGE - Lilacdreamers",
     "tecnologias": [
       "astro",
@@ -157,7 +177,7 @@
     "tipo": "web"
   },
   {
-    "id": "6",
+    "id": "7",
     "titulo": "WEB - CRM",
     "tecnologias": [
       "html5",
@@ -188,7 +208,7 @@
     "relacion": "API - CRM"
   },
   {
-    "id": "7",
+    "id": "8",
     "titulo": "API - CRM",
     "tecnologias": [
       "python",
