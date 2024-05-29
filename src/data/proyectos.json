@@ -1,16 +1,16 @@
 [
   {
     "id": "0",
-    "titulo": "Práctica PostgresSQL - API y Power BI",
+    "titulo": "Práctica PostgreSQL - API y Power BI",
     "tecnologias": [
       "python",
       "flask",
       "postgresql",
       "powerbi"
     ],
-    "descripcion": "API creada para la practica de consultas PostgreSQL",
+    "descripcion": "API creada para la practica de consultas PostgreSQL.",
     "imagenes": [ "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/Tablas-PracticaSQL",
-                  "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQL"],
+                  "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQLv2"],
     "funcionalidades": [
       "Agregar ventas",
       "Agregar usuarios",
