@@ -23,27 +23,3 @@
             transform: scale(1.1);
         }
 </style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var scrollLinks = document.querySelectorAll('nav a');
-    
-        scrollLinks.forEach(function(scrollLink) {
-            scrollLink.addEventListener('click', function(this: HTMLAnchorElement, e) {
-                e.preventDefault();
-    
-                let hrefAttribute = this.getAttribute('href');
-    
-                if(hrefAttribute) {
-                    var targetId = hrefAttribute.substring(1);
-                
-                    var targetElement = document.getElementById(targetId) as HTMLElement;
-    
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    });
-    </script>
