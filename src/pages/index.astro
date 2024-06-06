@@ -1,38 +1,62 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ImagenesTecnologias from "../components/Imagenes_Tecnologias.astro";
+import PaginaExperiencia from "@/components/Experiencia/PaginaExperiencia.astro";
+import Inicio from "@/components/Inicio/Inicio.astro";
+import PaginaProyectos from '@/components/Proyectos/PaginaProyectos.astro';
+
+const imagenesArray = [
+  '/img/lenguajes/astro.svg',
+  '/img/lenguajes/react.png',
+  '/img/lenguajes/javascript.png',
+  '/img/lenguajes/flask.svg',
+  '/img/lenguajes/pandas.png',
+  '/img/lenguajes/tailwind.ico',
+  '/img/lenguajes/sql.png',
+  '/img/lenguajes/python.png',
+  '/img/lenguajes/mongodb.svg',
+  '/img/lenguajes/powerbi.svg',
+  '/img/lenguajes/postgresql.svg',
+];
+
 
 const pageTitle = "Inicio";
 ---
 
 <Layout title = {pageTitle}> 
 
-	<div class="flex my-56 items-center">
-		<div class="space-y-5 lg:flex md:space-x-5 md:justify-center md:items-center lg:max-w-3xl lg:mx-auto">
-
-			<div class="flex justify-center">
-				<img src = '/img/foto-perfil.jpeg' class="h-56  lg:h-full lg:w-[300px] rounded-full" alt = "foto de perfil de jean" />
-			</div>
-
-			<div class="flex flex-col gap-y-8 md:gap-y-5 p-5">
-				<div class="space-y-5">
-					<h2 class="text-4xl md:text-3xl font-bold"><i class="fa-solid fa-terminal"></i> Hola, soy <span class="text-green-500 opacity-75">Jean Trujillo</span></h2>
-
-					<p class="text-md">
-						Me gusta la programación en general. Tengo experiencia en
-						desarrollos de páginas web y en la ingeniería de datos.
-					</p>
-				</div>
-
-				<div class="flex flex-wrap items-center gap-x-2 gap-y-3 md:flex-row md:gap-x-2 lg:items-end lg:justify-end">
-						<a class=" text-zinc-900 bg-zinc-200 hover:bg-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:py-3" target ="_blank"  href="https://drive.google.com/file/d/1MYjQF2RiYd5e3Dv73DnJ6ZnIX34BypHa/view?usp=sharing"><i class="fa-regular fa-file"></i> Hoja de vida</a>
-
-						<a class=" text-zinc-900 bg-zinc-200 hover:bg-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:py-3" target ="_blank"  href="https://www.linkedin.com/in/jeantpdev/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-						
-						<a class=" text-zinc-900 bg-zinc-200 hover:bg-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:py-3" target ="_blank"  href="https://github.com/jeantpdev"><i class="fa-brands fa-github"></i> GitHub</a>
-
-				</div>
-
-			</div>
-		</div>
+	<div class="py-5" id="inicio">
+        <Inicio />
 	</div>
+
+    <div class="py-5" id="experiencia">
+        <PaginaExperiencia />
+
+	</div>
+{/* 
+	<div class="flex flex-wrap justify-center">
+        {imagenesArray.map((imagen) => {
+            return(
+                <ImagenesTecnologias
+                    imagen = {imagen},
+                />
+                );
+            })
+        }
+
+    </div>
+*/}
+    <div class="py-5" id="proyectos">
+        <PaginaProyectos />
+    </div>
+{/*
+    <div class="space-y-5">
+        <h1 class="text-6xl font-semibold text-center">Acerca de <span class="text-emerald-400">mi</span></h1>
+        <p class = "text-center text-zinc-600 text-md">
+            Despues de terminar el bachillerato en Venezuela, me mudé a Barranquilla - Colombia en donde estudié la carrera de Ingeniería en Sistemas y Computación en la Corporación Universitaria Latinoamericana y complementé mis estudios con cursos online y aprendizaje para mejorar mis conocimientos y habilidades.
+    
+            Me gusta la programación en general. He particiado en distintos proyectos tanto laboral como personales los cuales me han permitido fortalecer mis conocimientos y habilidades en el desarrollo web y en la ingeniería de datos.
+        </p>
+    </div>
+ */}
 </Layout>

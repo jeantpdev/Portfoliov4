@@ -1,9 +1,6 @@
 ---
-import Navigation2Light from '@/components/menu/Navigation2 Light.jsx';
-import Footer from '@/components/Footer.astro';
+import Menu from '@/components/Menu/Menu.astro';
 import { ViewTransitions } from 'astro:transitions';
-const currentPage = Astro.url.pathname
-
 import '@fontsource-variable/inter';
 interface Props {
 	title: string;
@@ -24,14 +21,12 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="flex flex-col h-screen justify-between md:px-20 lg:px-0 md:max-w-4xl lg:max-w-4xl mx-auto">
-			<Navigation2Light client:load currentPage = {currentPage}/>
+		<Menu />
+		<div class="flex flex-col justify-between md:px-20 lg:px-0 md:max-w-4xl lg:max-w-4xl mx-auto ">
 			<div class="px-10 lg:px-10">
 				<slot />
 			</div>
-			<Footer />
 		</div>
-
 	</body>
 
 	<script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous" is:inline data-astro-rerun></script>

@@ -1,0 +1,51 @@
+---
+
+---
+
+<div class="fixed left-1/2 bottom-10 transform -translate-x-1/2 z-50">
+    <nav class="flex gap-x-5 py-2 px-5 bg-zinc-800 rounded-full hover-grow-container">
+        <a class="text-white text-xs lg:text-sm hover-grow" href="#inicio">Inicio</a>
+        <a class="text-white text-xs lg:text-sm hover-grow" href="#experiencia">Experiencia</a>
+        <a class="text-white text-xs lg:text-sm hover-grow" href="#proyectos">Proyectos</a>
+        <a class="text-white text-xs lg:text-sm hover-grow" href="#">Sobre_mi</a>
+    </nav>
+</div>
+
+<style>
+        .hover-grow-container {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow-container:hover {
+            transform: scale(1.05);
+        }
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: scale(1.1);
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var scrollLinks = document.querySelectorAll('nav a');
+    
+        scrollLinks.forEach(function(scrollLink) {
+            scrollLink.addEventListener('click', function(this: HTMLAnchorElement, e) {
+                e.preventDefault();
+    
+                let hrefAttribute = this.getAttribute('href');
+    
+                if(hrefAttribute) {
+                    var targetId = hrefAttribute.substring(1);
+                
+                    var targetElement = document.getElementById(targetId) as HTMLElement;
+    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>

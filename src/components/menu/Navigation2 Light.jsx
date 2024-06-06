@@ -4,9 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Inicio', href: '/' },
-  { name: 'Sobre mi', href: '/acerca-de-mi/' },
-  { name: 'Experiencia', href: '/experiencia/' },
-  { name: 'Proyectos', href: '/proyectos/' }
+  { name: 'Experiencia', href: '#experiencia' },
+  { name: 'Proyectos', href: '#proyectos' }
 ]
 
 export default function Navigation({ currentPage }) {

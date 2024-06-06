@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import proyectosRealizados from '../../data/proyectos.json';
 import Layout from '../../layouts/Layout.astro';
-import Technologys from '../../components/Technologys.astro';
+import Technologys from '../../components/Proyectos/infoProyectos/Technologys.astro';
 
 export async function getStaticPaths() {
     return proyectosRealizados.map((proyectos) => ({
@@ -36,7 +36,7 @@ const pageTitle = 'Proyectos';
 <Layout title={pageTitle}>
     <div class="flex flex-col gap-y-5 mb-10">
         <div class="flex flex-col space-y-5 mt-5">
-            <a href="/proyectos/"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
             <h1 class="text-3xl font-bold">{titulo}</h1>
         </div>
 
