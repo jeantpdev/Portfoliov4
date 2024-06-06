@@ -1,8 +1,8 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import proyectosRealizados from '../../data/proyectos.json';
-import Layout from '../../layouts/Layout.astro';
-import Technologys from '../../components/Proyectos/infoProyectos/Technologys.astro';
+import proyectosRealizados from '@/data/proyectos.json';
+import Layout from '@/layouts/Layout.astro';
+import Technologys from '@/components/proyectos-componentes/infoProyectos/Technologys.astro';
 
 export async function getStaticPaths() {
     return proyectosRealizados.map((proyectos) => ({
@@ -10,6 +10,7 @@ export async function getStaticPaths() {
             id: proyectos.id,
         },
         props: {
+            
             proyectos: proyectos,
         },
     }));
