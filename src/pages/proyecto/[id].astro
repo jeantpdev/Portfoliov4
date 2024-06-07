@@ -1,0 +1,84 @@
+---
+import type { GetStaticPaths } from 'astro';
+import proyectos_v2 from '@/data/proyectos_realizados.json';
+import Technologys from '@/components/proyectos-componentes/infoProyectos/Technologys.astro';
+import Layout from '@/layouts/Layout.astro';
+
+export async function getStaticPaths() {
+    return proyectos_v2.map((proyectos) => ({
+        params: {
+            id: proyectos.id,
+        },
+        props: {
+            proyectos: proyectos,
+        },
+    }));
+}
+
+const {
+    id,
+    titulo,
+    descripcion,
+    tecnologias,
+    imagen,
+    otros    
+} = Astro.props.proyectos;
+
+const proyectosRelacionados = Astro.props.proyectos;
+
+proyectosRelacionados.proyectos.map((proyectos) => (
+    console.log(proyectos)
+))
+
+const jsonSize = Object.keys(otros).length;
+---
+<Layout title="Informacion proyecto">
+
+<div class="flex flex-col gap-y-5 mb-10">
+    <div class="flex flex-col space-y-5 mt-5">
+        <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+        <h1 class="text-3xl font-bold">{titulo}</h1>
+    </div>
+    <div class="grid gap-5">
+        <h3 class="font-semibold text-lg">
+            <i class="fa-solid fa-code"></i> Principales tecnologías usadas:
+        </h3>
+        <section class="flex flex-wrap gap-2">
+            {
+                tecnologias &&
+                    tecnologias.map((tecnologia) => (
+                        <Technologys tecnologia={tecnologia} />
+                    ))
+            }
+        </section>
+        <article>
+            <p>{descripcion}</p>
+        </article>
+
+        <section>
+            <h2 class = "inline-block text-lg font-semibold my-2">Este proyecto esta relacionado con los siguientes:</h2>
+            <ul class="space-y-5">
+                {proyectosRelacionados.proyectos.map((proyecto) => (
+                    <div class="grid grid-cols-2 space-x-5">
+                        <figure>
+                            <img src={proyecto.imagenes[0]} class="h-56 w-full" alt="">
+                        </figure>
+                        <li class="flex flex-col justify-start space-y-2">
+                            <p><span class="font-semibold">Titulo proyecto:</span> {proyecto.titulo_proyecto}</p>
+                            <p class="text-sm">{proyecto.descripcion}</p>
+                            <div>
+                                <a class="text-gray-100 bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-3 py-2 me-2 mb-2" href={`/infoProyecto/${id}`}>Ver detalles <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </li>
+                    </div>
+                ))}
+            </ul>
+        </section>
+
+        {jsonSize > 0 ? <img src={otros.Visualizaciones[0]} alt=""> : null}
+
+    </div>
+    
+</div>
+
+</Layout>
