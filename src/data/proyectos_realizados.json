@@ -1,0 +1,356 @@
+[
+    {
+        "id": 3,
+        "titulo": "Practica PostgreSQL, PowerBI, Airflow",
+        "descripcion": "Proyecto para practicar tecnologias como PowerBI, Airflow y PostgreSQL",
+        "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/crm-inicio",
+        "tecnologias": ["python", "postgresql", "powerbi", "astro", "airflow"],
+        "proyectos": [
+            {
+                "titulo_proyecto": "Practica PostgreSQL - WEB",
+                "tecnologias": [
+                    "html",
+                    "css",
+                    "javascript",
+                    "axios"
+                ],
+                "descripcion": "WEB creada para las consultas de la BD PostgreSQL.",
+                "descripcion_detallada": "La web fue creada para hacer consultas, agregar y eliminar registros de la BD",
+                "funcionalidades": [
+                    "Agregar ventas",
+                    "Agregar usuarios",
+                    "Visualizar todas las ventas registradas",
+                    "Visualizar todos los usuarios registrados"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/crm-sql"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/crm-inicio",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/crm-estadisticas"
+                ],
+                "detalles": {
+                    "tipo": "WEB",
+                    "relacion": {
+                        "titulo": "Practica PostgreSQL - API",
+                        "link": "https://github.com/jeantpdev/api-ventas-sql"
+                    }
+                }
+            },
+            {
+                "titulo_proyecto": "Practica PostgreSQL - API",
+                "tecnologias": [
+                    "python",
+                    "flask",
+                    "postgresql",
+                    "powerbi"
+                ],
+                "descripcion": "API creada para la practica de consultas PostgreSQL.",
+                "descripcion_detallada": "La api fue creada en conjunto con la base de datos PostgreSQL etc etc etc.",
+                "funcionalidades": [
+                    "Agregar ventas",
+                    "Agregar usuarios",
+                    "Visualizar todas las ventas registradas",
+                    "Visualizar todos los usuarios registrados"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/api-ventas-sql"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/Tablas-PracticaSQL",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQLv2"
+                ],
+                "detalles": {
+                    "tipo": "API",
+                    "relacion": {
+                        "titulo": "Práctica PostgreSQL - WEB",
+                        "link": "https://github.com/jeantpdev/crm-sql"
+                    }
+                }
+            },
+            {
+                "titulo_proyecto": "Practica PostgreSQL - Airflow",
+                "tecnologias": [
+                    "airflow",
+                    "python",
+                    "flask"
+                ],
+                "descripcion": "Flujo de tareas que sirvio para ingresar datos ficticios a la BD",
+                "descripcion_detallada": "Flujo de tareas que sirvio para ingresar datos ficticios a la BD",
+                "funcionalidades": [
+                    "Crea datos de clientes ficticios",
+                    "Ingreso de datos de clientes fictios a la BD"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/airflow-dags"
+                },
+                "imagenes": [],
+                "detalles": {
+                    "tipo": "Orquestador de tareas",
+                    "relacion": {
+                        "titulo": "Práctica PostgreSQL - API",
+                        "link": "https://github.com/jeantpdev/api-ventas-sql"
+                    }
+                }
+            }
+        ],
+        "otros": {
+            "Visualizaciones": [
+                "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/PowerBI-PracticaSQLv2"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "titulo": "Prediccion cancer de mama",
+        "descripcion": "Predice cancer de mama segun datos que se ingresen al formulario",
+        "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-inicio",
+        "tecnologias": ["python", "flask", "sklearn", "astro", "react"],
+        "proyectos": [
+            {
+                "titulo_proyecto": "Prediccion cancer de mama - WEB",
+                "tecnologias": [
+                    "react",
+                    "axios",
+                    "astro",
+                    "tailwind"
+                ],
+                "descripcion": "Predicción de cancer de mama segun datos dados al sistema.",
+                "descripcion_detallada": "Realiza la prueba con inteligencia artificial segun datos existentes.",
+                "funcionalidades": [
+                    "Prueba de cancer de mama",
+                    "Informacion general"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/breast-cancer-web",
+                    "link_pagina": "https://breast-cancer-test.netlify.app/",
+                    "link_backend": "https://github.com/jeantpdev/breast-cancer-API"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-inicio",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-prueba",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-info"
+                ],
+                "detalles": {
+                    "tipo": "WEB",
+                    "relacion": [
+                        {
+                            "titulo": "Prediccion cancer de mama - API",
+                            "link": "https://github.com/jeantpdev/breast-cancer-API"
+                        }
+                    ]
+                }
+            },
+            {
+                "titulo_proyecto": "Prediccion cancer de mama - API",
+                "tecnologias": [
+                    "python",
+                    "flask",
+                    "sklearn",
+                    "pandas"
+                ],
+                "descripcion": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
+                "descripcion_detallada": "Prediccion de cancer de mama usando inteligencia artificial K-vecinos y la libreria pandas.",
+                "funcionalidades": [
+                    "Prediccion",
+                    "Entrada de datos",
+                    "Entrenamiento de datos"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/breast-cancer-API",
+                    "link_frontend": "https://github.com/jeantpdev/breast-cancer-web"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/cancer-mama-api-rutas"
+                ],
+                "detalles": {
+                    "tipo": "API",
+                    "relacion": [
+                        {
+                            "titulo": "Prediccion cancer de mama - WEB",
+                            "link": "https://github.com/jeantpdev/breast-cancer-web"
+                        }
+                    ]
+                }
+            }
+        ],
+        "otros": {}
+    },
+    {
+        "id": 1,
+        "titulo": "Tienda de productos",
+        "descripcion": "Tienda de distintos productos con una landing page y pagina de contacto",
+        "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-web",
+        "tecnologias": ["python", "mongodb", "astro", "react", "cloudinary"],
+        "proyectos": [
+            {
+                "titulo_proyecto": "Tienda de productos - WEB",
+                "tecnologias": [
+                    "astro",
+                    "react",
+                    "tailwind",
+                    "axios"
+                ],
+                "descripcion": "Tienda de productos que estan almacenados en mongoDB.",
+                "descripcion_detallada": "Cuenta con una landing page en la pagina principal y una pagina de contacto",
+                "funcionalidades": [
+                    "Agregar productos al carrito",
+                    "Eliminar productos del carrito",
+                    "Formulario de datos",
+                    "Landing page"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/tienda-landingPage",
+                    "link_pagina": "https://astro-tienda-demo.netlify.app/",
+                    "link_backend": "https://github.com/jeantpdev/mongodb-productos"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-web",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-producto-web",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/tienda-checkout-web"
+                ],
+                "detalles": {
+                    "tipo": "WEB",
+                    "relacion": [
+                        {
+                            "titulo": "Tienda de productos - API",
+                            "link": "https://github.com/jeantpdev/mongodb-productos"
+                        },
+                        {
+                            "titulo": "Tienda de productos - DASHBOARD",
+                            "link": "https://github.com/jeantpdev/admin-dashboard"
+                        }
+                    ]
+                }
+            },
+            {
+                "titulo_proyecto": "Tienda de productos - API",
+                "tecnologias": [
+                    "python",
+                    "flask",
+                    "mongodb",
+                    "jwt",
+                    "cloudinary"
+                ],
+                "descripcion": "CRUD para el control de inventario de productos.",
+                "descripcion_detallada": "CRUD para el control de inventario de productos.",
+                "funcionalidades": [
+                    "Agregar productos nuevos",
+                    "Eliminar productos",
+                    "Editar productos",
+                    "Ver pedidos",
+                    "Envio de correo al llegar pedido nuevo",
+                    "Subir imagenes del producto",
+                    "Inicio de sesion",
+                    "Proteccion de rutas mediante JWT"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/mongodb-productos",
+                    "link_frontend": "https://github.com/jeantpdev/admin-dashboard"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/api-dashboard-swagger"
+                ],
+                "detalles": {
+                    "tipo": "API",
+                    "relacion": [
+                        {
+                            "titulo": "Tienda de productos - WEB",
+                            "link": "https://github.com/jeantpdev/tienda-landingPage"
+                        },
+                        {
+                            "titulo": "Tienda de productos - DASHBOARD",
+                            "link": "https://github.com/jeantpdev/admin-dashboard"
+                        }
+                    ]
+                }
+            },
+            {
+                "titulo_proyecto": "Tienda de productos - DASHBOARD",
+                "tecnologias": [
+                    "astro",
+                    "react",
+                    "tailwind",
+                    "axios"
+                ],
+                "descripcion": "Dashboard destinado para el control de inventario de productos.",
+                "descripcion_detallada": "Contiene un CRUD para los productos y para los pedidos realizados por los clientes.",
+                "funcionalidades": [
+                    "Agregar productos nuevos",
+                    "Eliminar productos",
+                    "Editar productos",
+                    "Ver pedidos",
+                    "Envio automatico de correo al llegar pedido nuevo",
+                    "Subir imagenes del producto",
+                    "Contiene un inicio de sesion"
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/admin-dashboard",
+                    "link_backend": "https://github.com/jeantpdev/mongodb-productos"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-productos",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-agregar-producto",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-editar-producto",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-pedidos",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/dashboard-ver-pedido"
+                ],
+                "detalles": {
+                    "tipo": "WEB",
+                    "relacion": [
+                        {
+                            "titulo": "Tienda de productos - WEB",
+                            "link": "https://github.com/jeantpdev/tienda-landingPage"
+                        },
+                        {
+                            "titulo": "Tienda de productos - API",
+                            "link": "https://github.com/jeantpdev/mongodb-productos"
+                        }
+                    ]
+                }
+            }
+        ],
+        "otros": {}
+    },
+    {
+        "id": 0,
+        "titulo": "Lilacdreamers - LandingPage",
+        "descripcion": "Landing Page para el grupo Lilacdreamers (kpop dance group)",
+        "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-inicio",
+        "tecnologias": ["astro", "react", "cloudinary"],
+        "proyectos": [
+            {
+                "titulo_proyecto": "Prediccion cancer de mama - WEB",
+                "tecnologias": [
+                    "astro",
+                    "tailwind",
+                    "react"
+                ],
+                "descripcion": "Sitio web para Lilacdreamers (kpop dance group).",
+                "descripcion_detallada": "Sitio web para Lilacdreamers (kpop dance group). Muestra los miembros pertenecientes, galeria de imagenes, una página para ser parte de ellos y una página de contactos.",
+                "funcionalidades": [
+                    "Muestra miembros del grupo",
+                    "Galeria de imagenes",
+                    "Pagina de contacto",
+                    "Pagina 'unete' para quien se quiera unir al grupo "
+                ],
+                "links": {
+                    "link_repositorio": "https://github.com/jeantpdev/lilacdreamers",
+                    "link_pagina": "https://lilacdreamers.netlify.app/"
+                },
+                "imagenes": [
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-inicio",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-menu",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-miembros",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-unete",
+                    "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/v1/Proyectos/lilacdreamers-contacto"
+                ],
+                "detalles": {
+                    "tipo": "WEB",
+                    "relacion": []
+                }
+            }
+        ],
+        "otros": {}
+    }
+]
